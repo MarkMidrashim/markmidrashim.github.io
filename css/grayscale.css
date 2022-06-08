@@ -12,8 +12,8 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #37759A;
+  border: 1px solid #37759A;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -63,7 +63,7 @@
     color: white;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #161616;
@@ -74,26 +74,26 @@
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #37759A;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #234a62;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #37759A;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #37759A;
   }
 }
 
 .masthead {
   position: relative;
-  width: 100%;
+  width: 100% !important;
   height: auto;
   min-height: 45rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/code.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/code.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/mt-ensaio-2.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/mt-ensaio-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -101,6 +101,17 @@
 }
 
 .masthead h1 {
+  position: relative;
+  font-family: 'Varela Round';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(rgba(55, 117, 154, 0.9), rgba(20, 56, 77, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.masthead h2 {
   font-family: 'Varela Round';
   font-size: 2.5rem;
   line-height: 2.5rem;
@@ -110,13 +121,13 @@
   -webkit-background-clip: text;
 }
 
-.masthead h2 {
+.masthead h3 {
   max-width: 20rem;
   font-size: 1rem;
 }
 
 @media (min-width: 768px) {
-  .masthead h1 {
+  .masthead h2 {
     font-size: 4rem;
     line-height: 4rem;
   }
@@ -133,6 +144,11 @@
     letter-spacing: 0.8rem;
   }
   .masthead h2 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .masthead h3 {
     max-width: 30rem;
     font-size: 1.25rem;
   }
@@ -150,26 +166,26 @@
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  background-color: #37759A;
 }
 
 .btn-primary:hover {
-  background-color: #4f837f;
+  background-color: #2a5874;
 }
 
 .btn-primary:focus {
-  background-color: #4f837f;
+  background-color: #2a5874;
   color: white;
 }
 
 .btn-primary:active {
-  background-color: #467370 !important;
+  background-color: #234a62 !important;
 }
 
 .about-section {
   padding-top: 10rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(226, 226, 226, 0.9)), to(rgba(248, 249, 250, 0.8)));
+  background: linear-gradient(to bottom, #161616 0%, rgba(226, 226, 226, 0.9) 75%, rgba(248, 249, 250, 0.8) 100%);
 }
 
 .about-section p {
@@ -187,7 +203,7 @@
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #37759A;
   }
 }
 
@@ -201,10 +217,26 @@
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: #37759A;
     border-width: .25rem;
     width: 30%;
   }
+}
+
+.projects-section .img-zoom {
+  overflow: hidden;
+}
+
+.projects-section .img-zoom .img-inner {
+  -webkit-transition: -webkit-transform 1s, -webkit-filter .5s ease-out;
+  transition: -webkit-transform 1s, -webkit-filter .5s ease-out;
+  transition: transform 1s, filter .5s ease-out;
+  transition: transform 1s, filter .5s ease-out, -webkit-transform 1s, -webkit-filter .5s ease-out;
+}
+
+.projects-section .img-zoom .img-inner:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .signup-section {
@@ -235,7 +267,7 @@
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #37759A;
 }
 
 .contact-section .card h4 {
@@ -246,7 +278,7 @@
 }
 
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #37759A;
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -279,24 +311,28 @@ body {
 }
 
 a {
-  color: #64a19d;
+  color: #37759A;
 }
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #3c6360;
+  color: #1c3c4f;
 }
 
 .bg-black {
   background-color: #161616 !important;
 }
 
+.bg-gray {
+  background-color: #232323 !important;
+}
+
 .bg-primary {
-  background-color: #64a19d !important;
+  background-color: #37759A !important;
 }
 
 .text-primary {
-  color: #64a19d !important;
+  color: #37759A !important;
 }
 
 footer {

@@ -4,6 +4,31 @@
 	// Initiate the wowjs
 	new WOW().init();
 
+	$(document).ready(() => {
+		var imgs = document.images,
+			len = imgs.length,
+			counter = 0;
+
+		[].forEach.call(imgs, (img) => {
+			if (img.complete)
+				incrementCounter();
+			else
+				img.addEventListener('load', incrementCounter, false);
+		});
+
+		function incrementCounter() {
+			counter++;
+
+			if (counter === 1)
+				$('.loader').addClass('show');
+
+			if (counter === len) {
+				$('.loader').removeClass('show');
+				console.log('All images loaded!');
+			}
+		}
+	});
+
 	// Smooth scrolling using jQuery easing
 	$('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

@@ -10,6 +10,20 @@
 	background-attachment: scroll;
 	background-size: cover;
 
+	.flex-container {
+		display: flex;
+    align-items: center;
+    justify-content: center;
+	}
+
+	.middle-text {
+		font-size: 8rem;
+		position: absolute;
+		line-height: 8rem;
+		letter-spacing: 1rem;
+		text-align: center;
+	}
+
 	h1 {
 		position: relative;
 		font-family: 'Varela Round';

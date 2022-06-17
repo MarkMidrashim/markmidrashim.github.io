@@ -14,19 +14,23 @@
 		<title>Marcos & Tamiris</title>
 		<link rel="icon" type="image/png" href="img/favicon.png" />
 
-		<!-- Bootstrap core CSS -->
-		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
 		<!-- Custom fonts for this template -->
 		<!--<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">-->
 		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
+		<!-- Libs -->
+		<link href="vendor/animate/animate.min.css" rel="stylesheet" />
+		<link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
 		<!-- Font Awesome Icons -->
 		<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
 
 		<!-- Custom styles for this template -->
-		<link href="css/grayscale.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
 	</head>
 
 	<body id="page-top">
@@ -34,29 +38,20 @@
 		<!-- Navigation -->
 		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 			<div class="container">
-				<!--<a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>-->
-				<button class="navbar-toggler navbar-toggler-right"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarResponsive"
-					aria-controls="navbarResponsive"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					Menu
-					<i class="fas fa-bars"></i>
-				</button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#about">Sobre Nós</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#dresscode">Dress Code</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#location">Local</a>
-					</li>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="#about">Sobre Nós</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="#dresscode">Vestimenta</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="#location">Local</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="#howtoget">Como chegar</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -66,21 +61,21 @@
 		<header class="masthead">
 			<div class="container d-flex h-100 align-items-center">
 				<div class="mx-auto text-center">
-					<div class="d-flex flex-content-justify">
+					<div class="d-flex justify-content-center flex-column">
 						<h2 class="mx-auto my-0 text-uppercase">Marcos</h2>
 						<h1 class="mx-auto my-0 text-uppercase">&</h1>
 						<h2 class="mx-auto my-0 text-uppercase">Tamiris</h2>
 					</div>
-					<h3 class="text-white-50 mx-auto mt-2 mb-5">07 de Agosto de 2022</h3>
-					<a href="#about" class="btn btn-primary js-scroll-trigger">Bora!</a>
+					<h3 class="text-white-50 mx-auto mt-5 mb-4">07 de Agosto de 2022</h3>
+					<a href="#about" class="btn btn-primary mx-auto js-scroll-trigger">Bora!</a>
 				</div>
 			</div>
 		</header>
 
 		<!-- About Section -->
-		<section id="about" class="about-section projects-section text-center">
+		<section id="about" class="about-section text-center">
 			<div class="container">
-				<div class="row">
+				<div class="row wow slideInUp" data-wow-delay="0.1s">
 					<div class="col-lg-9 mx-auto">
 						<h2 class="text-white mb-4">Sobre Nós</h2>
 						<p class="text-white-50">
@@ -90,9 +85,9 @@
 				</div>
 
 				<!-- Project One Row -->
-				<div class="row justify-content-center no-gutters">
+				<div class="row justify-content-center no-gutters wow slideInLeft" data-wow-delay="0.1s">
 					<div class="col-lg-6 img-zoom">
-						<img class="img-fluid img-inner" src="img/mt-inicio.jpeg" alt="">
+						<img class="img-fluid img-inner" src="img/casal/mt-inicio.jpeg" alt="Pessoal ao redor de uma bancada de escritório">
 					</div>
 					<div class="col-lg-6 order-lg-first">
 						<div class="bg-gray text-center h-100 project">
@@ -110,9 +105,10 @@
 				</div>
 
 				<!-- Project Two Row -->
-				<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+				<div class="row justify-content-center no-gutters mb-lg-0 wow slideInRight" data-wow-delay="0.3s">
 					<div class="col-lg-6 img-zoom">
-						<img class="img-fluid img-inner" src="img/mt-jardim-curitiba.jpeg" alt="">
+						<!--<img class="img-fluid img-inner" src="img/mt-jardim-curitiba.jpeg" alt="">-->
+						<img class="img-fluid img-inner" src="img/casal/mt-ilha-grande.png" alt="Casal sorrindo de costas para orla da praia">
 					</div>
 					<div class="col-lg-6">
 						<div class="bg-gray text-center h-100 project">
@@ -130,9 +126,9 @@
 				</div>
 
 				<!-- Project Three Row -->
-				<div class="row justify-content-center no-gutters">
+				<div class="row justify-content-center no-gutters mb-3 mb-lg-0 wow slideInLeft" data-wow-delay="0.5s">
 					<div class="col-lg-6 img-zoom">
-						<img class="img-fluid img-inner" src="img/mt-noivado-2.jpeg" alt="">
+						<img class="img-fluid img-inner" src="img/casal/mt-noivado-2.jpeg" alt="Homem ajoelhado pedindo mulher em casamento">
 					</div>
 					<div class="col-lg-6 order-lg-first">
 						<div class="bg-gray text-center h-100 project">
@@ -142,7 +138,7 @@
 									<p class="mb-0 text-white-50">
 										Desde então, Ele e Ela se unificaram, e viraram Eles<br />
 										Eles fizeram muitos planos<br />
-										E em <i>19/06/2021</i> Eles decidiram se casar
+										E em <i>19/06/2021</i> decidiram se casar
 									</p>
 									<hr class="d-none d-lg-block mb-0 mr-0">
 								</div>
@@ -153,107 +149,150 @@
 			</div>
 		</section>
 
-		<!-- Projects Section -->
-		<section id="dresscode" class="projects-section bg-light">
+		<!-- Dresscode Section -->
+		<section id="dresscode" class="dresscode-section bg-light">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-9 mx-auto">
-						<h2 class="text-black mb-4">Dress Code</h2>
+				<div class="row wow fadeInUp" data-wow-delay="0.1s">
+					<div class="col-lg-9 mx-auto" >
+						<h2 class="text-black mb-4">Vestimenta</h2>
 						<p class="text-black-50">
-							Um breve resumo de como iniciamos nossa história
+							Dicas para arrasar no look!
 						</p>
 					</div>
 				</div>
 
 				<!-- Featured Project Row -->
-				<div class="row align-items-center no-gutters mb-4 mb-lg-5">
+				<div class="row align-items-center no-gutters mb-2 mb-lg-5">
 					<div class="col-xl-8 col-lg-7">
-						<img class="img-fluid mb-3 mb-lg-0" src="img/mt-ilha-grande.png" alt="">
+						<div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+							<div class="testimonial-item bg-light rounded my-4">
+								<img class="img-fluid mb-3 mb-lg-0" src="img/casal/mt-ilha-grande.png" alt="">
+							</div>
+							<div class="testimonial-item bg-light rounded my-4">
+								<img class="img-fluid mb-3 mb-lg-0" src="img/casal/mt-ilha-grande.png" alt="">
+							</div>
+							<div class="testimonial-item bg-light rounded my-4">
+								<img class="img-fluid mb-3 mb-lg-0" src="img/casal/mt-ilha-grande.png" alt="">
+							</div>
+						</div>
+
 					</div>
 					<div class="col-xl-4 col-lg-5">
-						<div class="featured-text text-center text-lg-left">
+						<div class="featured-text-left text-center text-lg-left">
 							<h4>Shoreline</h4>
 							<p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</section>
 
-		<!-- Signup Section -->
-		<section id="location" class="signup-section">
+		<!-- Location Section -->
+		<section id="location" class="location-section bg-light">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-lg-8 mx-auto text-center">
-						<i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-						<h2 class="text-white mb-1">Get in touch with me directly!</h2>
+				<div class="row wow slideInUp" data-wow-delay="0.1s">
+					<div class="col-lg-9 d-flex align-items-end flex-column">
+						<h2 class="text-black mb-4">Local</h2>
+						<p class="text-black-50">
+							Venha tranquilo e aproveite a estadia!
+						</p>
+					</div>
+				</div>
+
+				<!-- Featured Project Row -->
+				<div class="row align-items-center no-gutters mb-2 mb-lg-5">
+					<div class="col-xl-4 col-lg-5">
+						<div class="featured-text-right text-center text-lg-left">
+							<h4>Shoreline</h4>
+							<p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+						</div>
+					</div>
+					<div class="col-xl-8 col-lg-7">
+						<div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+							<div class="testimonial-item bg-light rounded my-4">
+								<img class="img-fluid mb-3 mb-lg-0" src="img/local/local-main.png" alt="Área externa para frente da casa com piscina">
+							</div>
+							<div class="testimonial-item bg-light rounded my-4">
+								<img class="img-fluid mb-3 mb-lg-0" src="img/local/local-deck.png" alt="Deck de frente para praia com cadeiras, mesa e rede">
+							</div>
+							<div class="testimonial-item bg-light rounded my-4">
+								<img class="img-fluid mb-3 mb-lg-0" src="img/local/local-suite.png" alt="Suíte">
+							</div>
+							<div class="testimonial-item bg-light rounded my-4">
+								<img class="img-fluid mb-3 mb-lg-0" src="img/local/local-externo.png" alt="Área externa com bancada com churrasqueira e pia">
+							</div>
+							<div class="testimonial-item bg-light rounded my-4">
+								<img class="img-fluid mb-3 mb-lg-0" src="img/local/local-praia.png" alt="Vista da praia em frente a casa">
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Contact Section -->
-		<section class="contact-section bg-black">
+		<!-- How to get Section -->
+		<section id="howtoget" class="howtoget-section bg-gray">
 			<div class="container">
-
-			<div class="row">
-
-				<div class="col-md-4 mb-3 mb-md-0">
-				<div class="card py-4 h-100">
-					<div class="card-body text-center">
-					<i class="fas fa-map-marked-alt text-primary mb-2"></i>
-					<h4 class="text-uppercase m-0">Location</h4>
-					<hr class="my-4">
-					<div class="small text-black-50">Ubatuba/SP, BR</div>
+				<div class="row wow slideInUp" data-wow-delay="0.1s">
+					<div class="col-md-10 col-lg-8 pb-5 mx-auto text-center">
+						<i class="far fa-paper-plane fa-2x mb-2 text-primary"></i>
+						<h2 class="text-primary mb-1">
+							Se ainda houver dúvidas de como chegar,<br/>veja no mapa ou ligue!
+						</h2>
 					</div>
 				</div>
-				</div>
 
-				<div class="col-md-4 mb-3 mb-md-0">
-				<div class="card py-4 h-100">
-					<div class="card-body text-center">
-					<i class="fas fa-envelope text-primary mb-2"></i>
-					<h4 class="text-uppercase m-0">E-mail</h4>
-					<hr class="my-4">
-					<div class="small text-black-50">
-						<a href="#">marcosfranco.developer@gmail.com</a>
-					</div>
-					</div>
-				</div>
-				</div>
-
-				<div class="col-md-4 mb-3 mb-md-0">
-				<div class="card py-4 h-100">
-					<div class="card-body text-center">
-					<i class="fas fa-mobile-alt text-primary mb-2"></i>
-					<h4 class="text-uppercase m-0">Phone</h4>
-					<hr class="my-4">
-					<div class="small text-black-50">+55 (11) 93224-7792</div>
+				<div class="row mt-5">
+					<div class="col-12 wow slideInUp" data-wow-delay="0.1s">
+						<div class="d-flex justify-content-center mx-auto mb-2">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.099696772877!2d-45.07713968447713!3d-23.492918264954692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cd55166afbef35%3A0x9b8ca5a330482621!2sCasa%20P%C3%A9%20na%20Areia%20UbatubaToninhas.com!5e0!3m2!1spt-BR!2sbr!4v1655475052572!5m2!1spt-BR!2sbr"
+								height="462"
+								style="width: 100%; border: 0; border-radius: 5px"
+								allowfullscreen
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+						</div>
 					</div>
 				</div>
+				<div class="row mt-5">
+					<div class="col-sm-12 col-md-6 col-lg-12">
+						<div class="row">
+							<div class="col-md-4 col-lg-6 mb-5">
+								<a href="https://g.page/ubatubatoninhas?share" target="_blank">
+									<div class="card py-4 h-100">
+										<div class="card-body text-center">
+											<i class="fas fa-map-marked-alt text-primary mb-2"></i>
+											<h4 class="text-uppercase m-0">Localização</h4>
+											<hr class="my-4">
+											<div class="small text-black-50">Praia das Toninhas - Ubatuba/SP, BR</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4 col-lg-6 mb-5">
+								<a href="tel:5511932247792">
+									<div class="card py-4 h-100">
+										<div class="card-body text-center">
+											<i class="fas fa-mobile-alt text-primary mb-2"></i>
+											<h4 class="text-uppercase m-0">Celular</h4>
+											<hr class="my-4">
+											<div class="small text-black-50">+55 (11) 93224-7792</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-
-			<div class="social d-flex justify-content-center">
-				<a href="#" class="mx-2">
-				<i class="fab fa-linkedin"></i>
-				</a>
-				<a href="#" class="mx-2">
-				<i class="fab fa-instagram"></i>
-				</a>
-				<a href="#" class="mx-2">
-				<i class="fab fa-github"></i>
-				</a>
-			</div>
-
 			</div>
 		</section>
 
 		<!-- Footer -->
 		<footer class="bg-black small text-center text-white-50">
 			<div class="container">
-				Copyright &copy; MarcosFranco 2022
+				Copyright &copy; MarcosFranco<br/>
+				2022
 			</div>
 		</footer>
 
@@ -264,10 +303,12 @@
 		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 		<!-- Plugin JavaScript -->
+		<script src="vendor/wowjs/wow.min.js"></script>
 		<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+		<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
 
 		<!-- Custom scripts for this template -->
-		<script src="js/grayscale.min.js"></script>
 		<script src="js/fontawesome.min.js"></script>
+		<script src="js/main.min.js"></script>
 	</body>
 </html>

@@ -17,3 +17,8 @@ $secondary: #14384D !default;
 $tertiary: #6AB8E5 !default;
 $quaternary: #4D310C !default;
 $quintenary: #996F37 !default;
+
+$bg-light: #f8f9fa !default;
+$bg-primary: $primary !default;
+$bg-black: $black !default;
+$bg-gray: lighten($black, 5%) !default;

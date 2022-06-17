@@ -1,0 +1,5 @@
+.dresscode-section {
+	padding-top: 10rem;
+	padding-bottom: -10rem;
+	background: linear-gradient(to bottom, #{fade-out($bg-light, .1)} 0%,#{fade-out($white, .3)} 75%,$white 100%);
+}
